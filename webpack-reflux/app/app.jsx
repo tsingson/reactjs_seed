@@ -37,7 +37,16 @@ Reflux.StoreMethods.getMoreartyContext = function() {
     return Ctx;
 };
 
-
+// notice this var define must before the var TodoStore , why ??
+// 2015.04.22 tsingson 
+var TodoActions = Reflux.createActions([
+    'add',
+    'edit',
+    'remove',
+    'toggle',
+    'toggleAll',
+    'clearCompleted'
+]);
 
 var TodoStore = Reflux.createStore({
     listenables: TodoActions, //NOTE: read Reflux documentation.
@@ -108,14 +117,6 @@ var TodoStore = Reflux.createStore({
     }
 });
 
-var TodoActions = Reflux.createActions([
-    'add',
-    'edit',
-    'remove',
-    'toggle',
-    'toggleAll',
-    'clearCompleted'
-]);
 
 
 var App = React.createClass({
