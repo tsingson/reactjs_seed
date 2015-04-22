@@ -10,17 +10,9 @@ import React from 'react/addons';
 import Morearty from 'morearty';
 import Reflux from 'reflux';
 import Director from 'director';
-
-var Router = Director.Router;
-
 import Immutable from 'immutable';
 
-
-//var React = require('react/addons');
-//var Morearty = require('morearty');
-//var Reflux = require('reflux');
-//var Router = require('director').Router;
-//var Immutable = require('immutable');
+var Router = Director.Router;
 
 var NOW_SHOWING = Object.freeze({ALL: 'all', ACTIVE: 'active', COMPLETED: 'completed'});
 var currentId = 2;
@@ -45,14 +37,7 @@ Reflux.StoreMethods.getMoreartyContext = function() {
     return Ctx;
 };
 
-var TodoActions = Reflux.createActions([
-    'add',
-    'edit',
-    'remove',
-    'toggle',
-    'toggleAll',
-    'clearCompleted'
-]);
+
 
 var TodoStore = Reflux.createStore({
     listenables: TodoActions, //NOTE: read Reflux documentation.
@@ -122,6 +107,16 @@ var TodoStore = Reflux.createStore({
         });
     }
 });
+
+var TodoActions = Reflux.createActions([
+    'add',
+    'edit',
+    'remove',
+    'toggle',
+    'toggleAll',
+    'clearCompleted'
+]);
+
 
 var App = React.createClass({
     displayName: 'App',
