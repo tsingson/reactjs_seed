@@ -15,7 +15,7 @@ A boilerplate for building React apps with ES6 and webpack.
 Clone the project and remove the git repository:
 
 ```bash
-git clone --depth=1 https://github.com/badsyntax/react-seed.git my-project
+git clone https://www.github.com/tsingson/reactjs_seed.git my-project
 cd my-project
 rm -rf .git && git init
 ```
