@@ -1,7 +1,6 @@
-/** @jsx React.DOM **/
 
-var React = require('react');
-var Reflux = require('reflux');
+
+import React from 'react/addons';
 
 var ComponentProps = React.createClass( {
     render: function() {

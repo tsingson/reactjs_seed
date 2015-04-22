@@ -1,6 +1,6 @@
 {
   "name": "reactjs-webpack",
-  "version": "0.0.9",
+  "version": "0.0.1",
   "repository": "https://github.com/tsingson/reactjs_seed",
   "config": {
     "build_dir": "./build",
@@ -28,6 +28,7 @@
     "immutable": "^3.7.2",
     "normalize.css": "^3.0.3",
     "react": "^0.13.2",
+    "react-modal": "^0.1.1",
     "reflux": "^0.2.7"
   },
   "devDependencies": {

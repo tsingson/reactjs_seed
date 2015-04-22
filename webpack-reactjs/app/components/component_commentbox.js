@@ -1,4 +1,4 @@
-var React = require('react/addons');
+npmvar React = require('react/addons');
 var $ = require('jquery');
 
 /**

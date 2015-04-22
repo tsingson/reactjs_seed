@@ -83,7 +83,7 @@ var loaders = [
 ];
 
 var entry = {
-  app: ['./app/app.jsx']
+  app: ['./app.jsx']
 };
 if (DEBUG) {
   entry.app.push('webpack-dev-server/client?http://localhost:8000');
